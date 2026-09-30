@@ -19,7 +19,7 @@ This website was developed as a web development project with a focus on creating
 
 ## Live Website
 
-[View Sonique Website](YOUR-SONIQUE-LIVE-LINK)
+[View Sonique Website] (https://oliviagoh.github.io/sonique-headphones./)
 
 ## Project Purpose
 
