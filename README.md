@@ -3,7 +3,7 @@ Sonique is designed as an e-commerce website for audio products, with a focus on
 
 This website was developed as a web development project with a focus on creating a simple and user-friendly interface for browsing different products.
 
-## Features
+## features
 
 - Browse audio products
 - View different headphones and earphones
@@ -17,9 +17,9 @@ This website was developed as a web development project with a focus on creating
 - CSS
 - JavaScript
 
-## Live Website
+## Website
 
-[View Sonique Website] (https://oliviagoh.github.io/sonique-headphones./)
+[Click Here] (https://oliviagoh.github.io/sonique-headphones./)
 
 ## Project Purpose
 
