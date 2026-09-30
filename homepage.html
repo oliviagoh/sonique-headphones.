@@ -1,0 +1,275 @@
+<!--done-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1500">
+  <title>Sonique - Home Page</title>
+  <link rel="stylesheet" href="nav_footer.css">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <div class="page-container">
+
+    <!--nav bar-->
+    <nav class="nav">
+
+      <div class="nav-left">
+        <a href="homepage.html" class="Sonique">Sonique</a>
+      </div>
+
+      <div class="nav-center">
+        <a href="about_us.html" class="About-us">About Us</a>
+        <a href="productlisting-page.html" class="Shop">Shop</a>
+        <a href="productlisting-page.html" class="Product">Product</a>
+        <a href="service.html" class="Support">Support</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="cart.html" class="add-to-cart" ><img src="images/navbar/add-to-card.png" alt="Add to cart" width="28" height="28"></a>
+        <a href="signup.html" href="#"><button class="sign-in">Sign in</button></a>
+        <a href="#" class="userprofile"><img src="images/navbar/userprofile.png" alt="User Profile" width="28" height="28"></a>
+      </div>
+
+    </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Sonique - Where Pure Sounds Meets Style.</h1>
+        <p class="hero-subtitle">Precision. Power. Sonique.</p>
+        <a href="productlisting-page.html" class="explore-btn">
+          <img src="images/homepage/explore-icon.png" alt="Explore" class="explore-icon" />
+          Explore Now
+        </a>
+      </div>
+      <img src="images/homepage/headphone.png" alt="Headphone" class="hero-img" />
+    </section>
+
+    <form class="search-form">
+      <div class="search-input-wrapper">
+        <img src="images/homepage/search-icon.png" alt="Search" class="search-icon-inside" />
+        <input type="text" placeholder="" aria-label="Search" />
+        <button type="submit" class="search-btn">Search</button>
+      </div>
+    </form>
+
+    <section class="products-section">
+
+      <div class="products-header">
+        <h2>Top Selling Products</h2>
+        <!-- filter button -->
+        <div class="product-filters">
+          <a href="#"><button class="filter-btn active" data-filter="all">All</button></a>
+          <a href="#"><button class="filter-btn" data-filter="earbuds">Earbuds</button></a>
+          <a href="#"><button class="filter-btn" data-filter="headphones">Headphones</button></a>
+        </div>
+      </div>
+
+      <div class="products-list">
+        <!-- filter earbuds -->
+         <!--product that display on the homepage-->
+        <a href="product5-display.html" style="text-decoration: none; color: inherit;">
+          <div class="product-card" data-category="earbuds">
+            <span class="product-badge sale">SALE%</span>
+            <div class="product-img-box">
+              <button class="fav-btn">&#9825;</button>
+              <img src="images/product5/product5.png" alt="Sonique WF-C510" />
+          </div>
+            <div class="product-title">Sonique WF-C510</div>
+            <div class="product-swatches">
+              <span class="swatch" style="background:#eaf3f6;"></span>
+            </div>
+            <div class="product-prices">
+              <span class="price">RM899.99</span>
+              <span class="old-price">RM1099.99</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="product7-display.html" style="text-decoration: none; color: inherit;">
+        <div class="product-card" data-category="earbuds">
+          <span class="product-badge new">New Arrival</span>
+          <div class="product-img-box">
+            <button class="fav-btn">&#9825;</button>
+            <img src="images/product7/product7.png" alt="Sonique Link Buds S"/>
+          </div>
+          <div class="product-title">Sonique Link Buds S</div>
+          <div class="product-swatches">
+            <span class="swatch" style="background:#181818;"></span>
+          </div>
+          <div class="product-prices">
+            <span class="price">RM1099.99</span>
+            <span class="old-price">RM1399.99</span>
+          </div>
+        </div>
+      </a>
+
+        <!-- filter headphones -->
+        <a href="product3-display.html" style="text-decoration: none; color: inherit;">
+          <div class="product-card" data-category="headphones">
+            <div class="product-img-box">
+              <button class="fav-btn">&#9825;</button>
+              <img src="images/product3/product3.webp" alt="Sonique WH-CH720N" />
+            </div>
+            <div class="product-title">Sonique WH-CH720N</div>
+            <div class="product-swatches">
+              <span class="swatch" style="background:#2d3748;"></span>
+            </div>
+            <div class="product-prices">
+              <span class="price">RM354.79</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="brand-section">
+      <h2 class="brand-title">Sonique</h2>
+      <img src="images/homepage/brand-banner.png" alt="Brand Banner" class="brand-img" />
+      <div class="features-list">
+        <!-- 1st row -->
+        <div class="feature-row">
+          <div class="feature-full">
+            <h3>Sonique Products - Smart Functions</h3>
+            <ul>
+              <li>Auto NC Optimizer – Adjusts noise cancelling to fit your environment.</li>
+              <li>Speak-to-Chat – Music pauses automatically when you talk.</li>
+              <li>Touch Controls – Simple swipes to control playback.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 2nd row -->
+        <div class="feature-row">
+          <div class="feature-img">
+            <img src="images/homepage/feature1.png" alt="Audio Feature" />
+          </div>
+          <div class="feature-text">
+            <h4>🎧 Audio Features</h4>
+            <ul>
+              <li>30 mm Carbon Drivers – Powerful and clear sound.</li>
+              <li>DSEE Extreme – Restores details in compressed audio.</li>
+              <li>Spatial Audio – Makes sound feel like it’s coming from all around you.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 3rd row -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <h4>🛠️ Connectivity</h4>
+            <ul>
+              <li>Bluetooth 5.2 – Efficient, low-lag connection.</li>
+              <li>Multipoint – Connect two devices at once.</li>
+              <li>Voice Assistant – Hands-free access to smart features.</li>
+            </ul>
+          </div>
+          <div class="feature-img">
+            <img src="images/homepage/feature2.png" alt="Connectivity Feature" />
+          </div>
+        </div>
+        <!-- 4th row -->
+        <div class="feature-row">
+          <div class="feature-full">
+            <h4>✨ Comfort & Lifestyle</h4>
+            <ul>
+              <li>Soft leather ear pads – Comfortable for long use.</li>
+              <li>Swivel & fold design – Easy to pack and travel with.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="newsletter-popup">
+      <button class="close-popup">&times;</button>
+      <h3>Join the Sonique Experience</h3>
+      <p>"Experience the sound of Sonique. Get 10% off your first order when you join us! "</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="name@gmail.com" />
+        <button type="submit">Join Now</button>
+      </form>
+    </div>
+    </main>
+
+   <!--footer-->
+   <footer class="footer-flex">
+    <div class="footer-flextop">
+      <!-- Top Left: About -->
+      <div class="footer-section About-Sonique">
+        <h4><a href="homepage.html" class="footer-heading">About Sonique</a></h4>
+        <!--use unordered list and anchor tag to link user to specific pages-->
+        <ul>
+          <li><a href="about_us.html">Our Brand</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="service.html">Service and Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Top Center: Products -->
+      <div class="footer-section">
+        <h4><a href="productlisting-page.html" class="footer-heading">Our Product</a></h4>
+        <ul>
+          <li><a href="productlisting-page.html">All Headphones & Earphones </a></li>
+          <li><a href="productlisting-page.html?filter=headphone">Headphones</a></li>
+          <li><a href="productlisting-page.html?filter=earphone">Earphones</a></li>
+        </ul>
+      </div>  
+
+      <!-- Top Right: Shipping Info -->
+      <div class="footer-section">
+        <h4><a href="faq.html" class="footer-heading">Shipping Information</a></h4>
+        <ul>
+          <li><a href="faq.html">Frequently Asked Question</a></li>
+          <li><a href="faq.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+        <!-- Chat Box (aligned top right beside shipping) -->
+        <div class="footer-section chatbox">
+          <h4><a href="review.html" class="footer-heading">Chat With Us</a></h4>
+          <ul>
+            <li><a href="review.html">Leave us a Review! </a></li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="footer-flex-middle">
+      <!-- Newsletter  -->
+      <div class="newsletter">
+        <label for="newsletter-email"><strong>Subscribe to our newsletter:</strong></label>
+        <div class="newsletter-input">
+          <input type="email" id="newsletter-email" placeholder="enter your email address">
+          <button id="subscribeBtn">SUBSCRIBE</button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-flex-bottom">
+       <!-- Bottom Row -->
+      <div class="contact-us">
+        <p><small>📞 Contact us: +60 12-345 6789 </small></p>
+      </div>
+      <div class="footer-bottom-right">
+        <p><small>Connect with us: </small></p>
+        <a href="https://www.instagram.com/accounts/login/"><img class="footer-icon" src="images/footer/footer-ig.png" alt="ig" width="25"> </a>
+        <a href="https://www.facebook.com/login"><img class="footer-icon"src="images/footer/footer-facebook.png" alt="facebook" width="25"> </a>
+        <a href="https://web.whatsapp.com/"><img class="footer-icon" src="images/footer/footer-whatsapp.png" alt="whastapp" width="25"> </a>
+      </div>
+    </div>
+
+    <div class="copyright-footer">
+      <small>&copy; Copyright Sonique 2025</small>
+    </div>
+  </footer>
+</div>
+
+<script src="javascript/indexFilter.js"></script>
+<script src="javascript/closePopup.js"></script>
+<script src="javascript/indexEmailValidation.js"></script>
+<script src="javascript/newsletterValidation.js"></script>
+
+</body>
+</html>

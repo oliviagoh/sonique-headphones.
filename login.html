@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonique - Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body style="padding-bottom: 5%;">
+  <div class="page-container">
+
+    <!-- Nav Bar -->
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="homepage.html" class="Sonique">Sonique</a>
+      </div>
+      <div class="nav-center">
+        <a href="about_us.html" class="About-us">About Us</a>
+        <a href="productlisting-page.html" class="Shop">Shop</a>
+        <a href="productlisting-page.html" class="Product">Product</a>
+        <a href="service.html" class="Support">Support</a>
+      </div>
+      <div class="nav-right">
+        <a href="cart.html" class="add-to-card"><img src="images/navbar/add-to-card.png" alt="Add to cart" width="28" height="28"></a>
+        <a href="#" class="userprofile"><img src="images/navbar/userprofile.png" alt="User Profile" width="28" height="28"></a>
+      </div>
+    </nav>
+
+    <main>
+      <h1 class="section-title">Log In For Sonique</h1>
+
+      <div class="form-box">
+        <form id="signupForm" action="/signup" method="post">
+
+          <!-- Username -->
+          <div class="float-label-input">
+            <input type="text" id="username" name="username" required placeholder=" " />
+            <label for="username">Username</label>
+          </div>
+
+          <!-- Password -->
+          <div class="float-label-input" style="position: relative;">
+            <input type="password" id="password" name="password" required placeholder=" " />
+            <label for="password">Password</label>
+            <span id="togglePasswordIcon"
+              style="cursor: pointer; font-size: 14px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #333;">Show</span>
+          </div>
+
+          <!-- Remember Me & Forgot -->
+          <div class="remember-forgot">
+            <label class="remember-label">
+              <input type="checkbox" id="terms" name="terms">
+              Remember Me
+            </label>
+            <a href="forgotpassword.html" class="forgot-link">Forgot Password?</a>
+          </div>
+
+          <div class="signup-link">
+            <a href="signup.html">Not registered yet? Sign up here!</a>
+          </div>
+
+          <input class="submit_btn" type="submit" value="Log In">
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <h3>Welcome Back!</h3>
+      <p id="greetingMessage">You've successfully logged in.</p>
+      <button id="closeModalBtn" class="modal-btn">Continue</button>
+    </div>
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="javascript/login.js"></script>
+</body>
+</html>

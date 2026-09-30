@@ -1,0 +1,270 @@
+<!--done -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonique - All Headphones and Earphones </title>
+    
+    <!--apply the CSS stylesheet -->
+    <link rel="stylesheet" href="nav_footer.css">
+    <link rel="stylesheet" href="productlisting-page.css">
+</head>
+<body>
+
+  <div class="page-container">
+
+   <!--nav bar-->
+   <nav class="nav">
+    <div class="nav-left">
+      <a href="homepage.html" class="Sonique">Sonique</a>
+    </div>
+    <div class="nav-center">
+      <a href="about_us.html" class="About-us">About Us</a>
+      <a href="productlisting-page.html" class="Shop">Shop</a>
+      <a href="productlisting-page.html" class="Product">Product</a>
+      <a href="service.html" class="Support">Support</a>
+    </div>
+    <div class="nav-right">
+      <a href="cart.html" class="add-to-card" ><img src="images/navbar/add-to-card.png" alt="Add to cart" width="28" height="28"></a>
+      <a href="signup.html"><button class="sign-in">Sign in</button></a>
+      <a href="#" class="userprofile"><img src="images/navbar/userprofile.png" alt="User Profile" width="28" height="28"></a>
+    </div>
+  </nav> 
+
+    <header class="header">
+        <h3 id="productHeader">All Headphones / Earphones </h3>
+    </header>
+      
+      <!--main content area: product lisitng page -->
+      <main class="main">
+        <div class="product-page-top">
+          <h4><a href="homepage.html">Home</a> > <a href="productlisting-page.html">Products </a></h4>
+
+          <div class="sort-product">
+            <label for="sort">Sort by: </label>
+            <select id="sort">
+              <option value="all">All Headphones & Earphones </option> <!--javascript part, user select which option lead to which specific page-->
+              <option value="headphone">Headphones</option>
+              <option value="earphone">Earphones</option>
+            </select>
+          </div>
+        </div>
+
+        <!--store and dislay list of products-->
+        <div class="product-container">
+
+          <!--product 1 : headphone 1-->
+          <div class="product-box headphone"> 
+            <!--flex item 1-->
+            <div class="image-box">
+              <a href="product1-display.html"> 
+                <img class="product-image" src="images/product1/product1.webp" alt="Sonique WH-CH720 Wireless Noice Cancelling Headphpones" width="700"> </a>
+            </div>
+            <!--flex item 2-->
+            <div class="description-box">
+              <div class="colorbox"> 
+                <!--create a circle to display product color-->
+                <span class="color-circle black"></span>
+              </div>
+              <!--link product details page here-->
+              <p class="productname"><a href="product1-display.html">Sonique WH-CH720 Wireless Noice Cancelling Headphpones</a></p>
+              <p class="productprice">RM899.90</p>
+            </div>
+          </div>
+
+       <!--product 2-->
+          <div class="product-box headphone">
+            <div class="image-box">
+              <span class="sale-tag">SALE%</span>
+              <a href="product2-display.html"> 
+              <img src="images/product2/product2.png.webp" alt="Sonique WH-CH520 Wireless Headphones" width="300"></a>
+            </div>
+            <div class="offer-box">
+                <div class="colorbox"> 
+                    <!--create a circle to display product color-->
+                    <span class="color-circle black"></span>
+                  </div> 
+                  <p class="productname"><a href="product2-display.html">Sonique WH-CH520 Wireless Headphones</a></p>
+                  <div class="price-container">
+                <p class="productprice">RM126.90</p>
+                <p class="offerprice">RM399.90</p>
+              </div>
+            </div>
+          </div>
+
+        <!--product 3-->
+          <div class="product-box headphone">
+            <div class="image-box">
+              <a href="product3-display.html"> 
+                <img src="images/product3/product3.webp" alt="Sonique WH-CH720N Wireless Headphones" width="275"></a>
+            </div>
+            <div class="description-box">
+                <div class="colorbox">
+                    <span class="color-circle darkblue"></span>
+                </div>
+                <p class="productname"><a href="product3-display.html">Sonique WH-CH720N Wireless Headphones</a></p>
+                <p class="productprice">RM354.79</p>
+            </div>
+          </div>
+
+          <!--product 4-->
+          <div class="product-box headphone">
+            <div class="image-box">
+              <a href="product4-display.html"> 
+                <span class="sale-tag">SALE%</span>
+                <img src="images/product4/product4.webp" alt="Sonique ZX110NC Noise Cancelling Headphones" width="280"></a>
+              </div>
+              <div class="offer-box">
+                  <div class="colorbox"> 
+                      <!--create a circle to display product color-->
+                      <span class="color-circle black"></span>
+                    </div> 
+                    <p class="productname"><a href="product4-display.html">Sonique ZX110NC Noise Cancelling Headphones</a></p>
+                    <div class="price-container">
+                  <p class="productprice">RM99.90</p>
+                  <p class="offerprice">RM129.90</p>
+                </div>
+              </div>
+          </div>
+
+          <!--product 5-->
+          <div class="product-box earphone">
+            <div class="image-box">
+              <a href="product5-display.html"> 
+                <span class="sale-tag">SALE%</span>
+                <img src="images/product5/product5.png" alt="Sonique WF-C510 Truly Wireless Earbuds" width="300"></a>
+              </div>
+              <div class="offer-box">
+                  <div class="colorbox"> 
+                      <!--create a circle to display product color-->
+                      <span class="color-circle lightblue"></span>
+                    </div> 
+                    <p class="productname"><a href="product5-display.html">Sonique WF-C510 Truly Wireless Earbuds</a></p>
+                    <div class="price-container">
+                  <p class="productprice">RM899.99</p>
+                  <p class="offerprice">RM1099.99</p>
+                </div>
+              </div>
+          </div>
+
+
+      <!--product 6-->
+          <div class="product-box earphone">
+            <div class="image-box">
+              <a href="product6-display.html"> 
+                <span class="sale-tag">SALE%</span>
+                <img src="images/product6/product6.png.webp" alt="Sonique WF-1000XM5 Wireless Noise Cancelling Earbuds" width="300"></a>
+              </div>
+              <div class="offer-box">
+                  <div class="colorbox"> 
+                      <!--create a circle to display product color-->
+                      <span class="color-circle black"></span>
+                    </div> 
+                    <p class="productname"><a href="product6-display.html">Sonique WF-1000XM5 Wireless Noise Cancelling Earbuds</a></p>
+                    <div class="price-container">
+                  <p class="productprice">RM1099.99</p>
+                  <p class="offerprice">RM1399.99</p>
+                </div>
+              </div>
+          </div>
+
+    <!--product 7-->
+          <div class="product-box earphone">
+            <div class="image-box">
+              <a href="product7-display.html"> 
+                <img src="images/product7/product7.png" alt="Sonique Link Buds S" width="280"></a>
+            </div>
+            <div class="description-box">
+                <div class="colorbox">
+                    <span class="color-circle black"></span>
+                </div>
+                <p class="productname"><a href="product7-display.html">Sonique Link Buds S</a></p>
+                <p class="productprice">RM399.90</p>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+      </main>
+
+   <!--footer-->
+   <footer class="footer-flex">
+    <div class="footer-flextop">
+      <!-- Top Left: About -->
+      <div class="footer-section About-Sonique">
+        <h4><a href="homepage.html" class="footer-heading">About Sonique</a></h4>
+        <!--use unordered list and anchor tag to link user to specific pages-->
+        <ul>
+          <li><a href="about_us.html">Our Brand</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="service.html">Service and Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Top Center: Products -->
+      <div class="footer-section">
+        <h4><a href="productlisting-page.html" class="footer-heading">Our Product</a></h4>
+        <ul>
+          <li><a href="productlisting-page.html">All Headphones & Earphones </a></li>
+          <li><a href="productlisting-page.html?filter=headphone">Headphones</a></li>
+          <li><a href="productlisting-page.html?filter=earphone">Earphones</a></li>
+        </ul>
+      </div>  
+
+      <!-- Top Right: Shipping Info -->
+      <div class="footer-section">
+        <h4><a href="faq.html" class="footer-heading">Shipping Information</a></h4>
+        <ul>
+          <li><a href="faq.html">Frequently Asked Question</a></li>
+          <li><a href="faq.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+        <!-- Chat Box (aligned top right beside shipping) -->
+        <div class="footer-section chatbox">
+          <h4><a href="review.css" class="footer-heading">Chat With Us</a></h4>
+          <ul>
+            <li><a href="review.css">Leave us a Review! </a></li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="footer-flex-middle">
+      <!-- Newsletter  -->
+      <div class="newsletter">
+        <label for="newsletter-email"><strong>Subscribe to our newsletter:</strong></label>
+        <div class="newsletter-input">
+          <input type="email" id="newsletter-email" placeholder="enter your email address">
+          <button id="subscribeBtn">SUBSCRIBE</button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-flex-bottom">
+       <!-- Bottom Row -->
+      <div class="contact-us">
+        <p><small>📞 Contact us: +60 12-345 6789 </small></p>
+      </div>
+      <div class="footer-bottom-right">
+        <p><small>Connect with us: </small></p>
+        <a href="https://www.instagram.com/accounts/login/"><img class="footer-icon" src="images/footer/footer-ig.png" alt="ig" width="25"> </a>
+        <a href="https://www.facebook.com/login"><img class="footer-icon"src="images/footer/footer-facebook.png" alt="facebook" width="25"> </a>
+        <a href="https://web.whatsapp.com/"><img class="footer-icon" src="images/footer/footer-whatsapp.png" alt="whastapp" width="25"> </a>
+      </div>
+    </div>
+
+    <div class="copyright-footer">
+      <small>&copy; Copyright Sonique 2025</small>
+    </div>
+  </footer>
+  </div> 
+        
+  <script src="javascript/newsletterValidation.js"></script> 
+  <script src="javascript/productListingFilter.js"></script>
+
+</body>
+</html>

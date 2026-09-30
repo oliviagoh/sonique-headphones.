@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Product Detail Page </title>
+        <link rel="stylesheet" href="nav_footer.css"> <!--reuse nav and footer layout for all webpage-->
+        <link rel="stylesheet" href="product_display.css"> <!--reuse this product display CSS for all the product description page-->
+    
+    </head>
+    <body>
+
+      <div class="page-container">
+         
+       <!--nav bar-->
+       <nav class="nav">
+        <div class="nav-left">
+          <a href="homepage.html" class="Sonique">Sonique</a>
+        </div>
+        <div class="nav-center">
+          <a href="about_us.html" class="About-us">About Us</a>
+          <a href="productlisting-page.html" class="Shop">Shop</a>
+          <a href="productlisting-page.html" class="Product">Product</a>
+          <a href="service.html" class="Support">Support</a>
+        </div>
+        <div class="nav-right">
+          <a href="cart.html" class="add-to-card" ><img src="images/navbar/add-to-card.png" alt="Add to cart" width="28" height="28"></a>
+          <a href="signup.html"><button class="sign-in">Sign in</button></a>
+          <a href="#" class="userprofile" ><img src="images/navbar/userprofile.png" alt="User Profile" width="28" height="28"></a>
+        </div>
+      </nav> 
+
+        <main class = "container">
+
+        <!--Display Section-->
+        <section class="product-section">
+
+          <div class="product-images">
+            <!-- Navigation Arrows -->
+            <button class="nav-button left" onclick="prevImage()">&#10094;</button>
+          
+            <!-- Main Displayed Image -->
+            <img src="images/product6/product6.png.webp" alt="Sonique WF-1000XM5 Wireless Noise Cancelling Earbuds" class="main-image" id="mainImage"/>
+          
+            <button class="nav-button right" onclick="nextImage()">&#10095;</button>
+          
+            <!-- Thumbnails -->
+            <div class="thumbnail-container">
+              <img src="images/product6/product6.png.webp" alt="Main" onclick="selectImage(0)" />
+              <img src="images/product6/product6 angle1.png.webp" alt="Angle 1" onclick="selectImage(1)" />
+              <img src="images/product6/product6 angle2.png.webp" alt="Angle 2" onclick="selectImage(2)" />
+              <img src="images/product6/product6 angle3.png.webp" alt="Angle 3" onclick="selectImage(3)" />
+              <img src="images/product6/product6 angle4.png.webp" alt="Angle 4" onclick="selectImage(4)" />
+            </div>
+          </div>
+          
+        <div class="product-details">
+            <h1> Sonique WF-1000XM5 Wireless Noise Cancelling Earbuds</h1>
+            <p class="product-code"> Model: WF-1000XM5 </p>
+            <p class="product-price"> <span class="old-price">RM1399.99</span><span class=" new-price">  RM1099.99</span> </p>
+            <label for="quantity">Quantity:</label>
+            
+            <div class="quantity-container">
+              <div class="quantity-increase-decrease">
+                <button class="quantity-btn" onclick="decrease()">-</button>
+                <span id="quantity">1</span>
+                <button class="quantity-btn" onclick="increase()">+</button>
+              </div>
+            </div>
+            <button class="add-to-cart" onclick="window.location.href='cart.html'">Add to Cart</button>
+          </div>
+        </section>
+
+        <!--Overview Section-->
+        <section class="overview">
+            <h2>OVERVIEW</h2>
+            <div class="overview-section">
+                
+              <h3>Product Description</h3>
+                <p>The Sonique WF-1000XM5 Truly Wireless Earbuds are compact, lightweight earbuds designed for small ears, offering clear sound with DSEE and 360 Reality Audio, up to 22 hours of battery life, Bluetooth 5.3 with multipoint pairing, ambient sound mode, and an eco-friendly build—ideal for everyday use without active noise cancellation. </p>
+                
+                <h3>Product Features</h3>
+                <p>The Sonique WF-1000XM5 wireless earbuds feature industry-leading noise cancellation powered by the HD Noise Cancelling Processor QN2e and Integrated Processor V2, delivering a quiet and immersive audio experience. They include 8.4mm Dynamic Driver X units for high-resolution sound with deep bass and clear highs, and support Hi-Res Audio Wireless with LDAC. The earbuds offer adaptive sound control, automatically adjusting noise cancelling based on your activity or environment. With multipoint Bluetooth connectivity, you can connect to two devices simultaneously. They also include smart features like speak-to-chat, head gesture controls, and voice assistant support. The design is sleek, lightweight, and ergonomically shaped for all-day comfort. The battery lasts up to 8 hours per charge, with up to 24 hours using the case, and a quick 3-minute charge provides up to 60 minutes of playback.</p>
+                
+                <h3>Specification</h3>
+                <p>The Sonique WF-1000XM5 earbuds are equipped with 8.4mm Dynamic Driver X units that deliver high-resolution audio with powerful bass and clear treble. They feature dual processors—HD Noise Cancelling Processor QN2e and Integrated Processor V2—which work together to provide advanced, adaptive noise cancellation. The earbuds support Bluetooth 5.3 and LDAC codec for high-quality wireless audio, and offer multipoint connectivity, allowing simultaneous pairing with two devices. Each earbud weighs approximately 5.9 grams and is designed with an ergonomic shape for improved comfort and fit. The WF-1000XM5 provides up to 8 hours of battery life per charge, with an additional 16 hours from the charging case, totaling 24 hours of playback. A quick charge of just 3 minutes gives up to 60 minutes of use. The earbuds are IPX4 water-resistant, suitable for splashes and sweat, and charge via a USB-C port or Qi wireless charging.</p>
+
+                <h3>SHIPPING INFO / TERMS AND CONDITIONS</h3>
+                <p>Orders are processed within 1 to 2 business days and typically delivered within 3 to 7 business days, depending on your location. Tracking details will be provided once the item is shipped. Free standard shipping is available for orders over RM100</p>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <!--footer-->
+  <footer class="footer-flex">
+
+    <div class="footer-flextop">
+      <!-- Top Left: About -->
+      <div class="footer-section About-Sonique">
+        <h4><a href="#" class="footer-heading">About Sonique</a></h4>
+        <!--use unordered list and anchor tag to link user to specific pages-->
+        <ul>
+          <li><a href="about_us.html">Our Brand</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="service.html">Service & Support</a></li>
+        </ul>
+        
+      </div>
+
+     
+        <!-- Top Center: Products -->
+        <div class="footer-section">
+          <h4><a href="productlisting-page.html" class="footer-heading">Our Product</a></h4>
+          <ul>
+            <li><a href="productlisting-page.html">All Headphones & Earphones </a></li>
+            <li><a href="productlisting-page.html?filter=headphone">Headphones</a></li>
+            <li><a href="productlisting-page.html?filter=earphone">Earphones</a></li>
+          </ul>
+        </div> 
+
+      <!-- Top Right: Shipping Info -->
+      <div class="footer-section">
+        <h4><a href="faq.html" class="footer-heading">Shipping Information</a></h4>
+        <ul>
+          <li><a href="faq.html">Frequently Asked Question</a></li>
+          <li><a href="faq.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+          <!-- Chat Box (aligned top right beside shipping) -->
+          <div class="footer-section chatbox">
+            <h4><a href="review.html" class="footer-heading">Chat With Us</a></h4>
+            <ul>
+              <li><a href="review.html">Leave us a Review! </a></li>
+            </ul>
+          </div>
+        </div>
+
+    <div class="footer-flex-middle">
+      <!-- Newsletter (below chat box, also far right) -->
+      <div class="newsletter">
+        <label for="newsletter-email"><strong>Subscribe to our newsletter:</strong></label>
+        <div class="newsletter-input">
+          <input type="email" id="newsletter-email" placeholder="enter your email address">
+          <button id="subscribeBtn">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-flex-bottom">
+       <!-- Bottom Row -->
+      <div class="contact-us">
+        <p><small>📞 Contact us: +60 12-345 6789 </small></p>
+      </div>
+      <div class="footer-bottom-right">
+        <p><small>Connect with us: </small></p>
+        <a href="https://www.instagram.com/accounts/login/"><img class="footer-icon" src="images/footer/footer-ig.png" alt="ig" width="25"> </a>
+        <a href=" https://www.facebook.com/login"><img class="footer-icon"src="images/footer/footer-facebook.png" alt="facebook" width="25"> </a>
+        <a href="https://web.whatsapp.com"><img class="footer-icon" src="images/footer/footer-whatsapp.png" alt="whastapp" width="25"> </a>
+      </div>
+    </div>
+
+    <div class="copyright-footer">
+      <small>&copy; copyright Sonique 2025</small>
+    </div>
+  </footer>
+
+    </div>
+    </body>
+
+    <script src="javascript/product6.js"></script>
+        
+    <script src="javascript/newsletterValidation.js"></script> 
+
+    <script src="javascript/quantity.js"></script>
+
+    
+</html>

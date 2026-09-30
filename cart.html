@@ -1,0 +1,164 @@
+<!--done-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1500">
+  <title>Sonique - Cart</title>
+  <link rel="stylesheet" href="nav_footer.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <div class="page-container">
+
+   <!--nav bar-->
+   <nav class="nav">
+    <div class="nav-left">
+      <a href="homepage.html" class="Sonique">Sonique</a>
+    </div>
+    <div class="nav-center">
+      <a href="about_us.html" class="About-us">About Us</a>
+      <a href="productlisting-page.html" class="Shop">Shop</a>
+      <a href="productlisting-page.html" class="Product">Product</a>
+      <a href="service.html" class="Support">Support</a>
+    </div>
+    <div class="nav-right">
+      <a href="cart.html" class="add-to-card" ><img src="images/navbar/add-to-card.png" alt="Add to cart" width="28" height="28"></a>
+      <a href="signup.html"><button class="sign-in">Sign in</button></a>
+      <a href="#" class="userprofile"><img src="images/navbar/userprofile.png" alt="User Profile" width="28" height="28"></a>
+    </div>
+  </nav> 
+
+  <main>
+    <div class="breadcrumb">
+      <a href="homepage.html" class="breadcrumb-link">Home</a>
+      <span class="breadcrumb-separator">&gt;</span>
+      <a href="cart.html" class="breadcrumb-link">My Cart</a>
+    </div>
+    <section class="cart-section">
+      <div class="cart-header">
+        <span>Product</span>
+        <span>Price</span>
+        <span>Quantity</span>
+      </div>
+      <div class="cart-item">
+        <img src="images/cart/product1.png" alt="Sonique WF-C510" class="cart-product-img" />
+        <div class="cart-product-details">
+          <div class="cart-product-title">Sonique WF-C510 Truly Wireless Headphones</div>
+          <div class="cart-product-model">Model: WF-CH720</div>
+          <div class="product-swatches">
+            <span class="swatch" style="background:#F0F8FF;"></span>
+          </div>
+        </div>
+        <div class="cart-product-price">RM899.99</div>
+        <div class="cart-product-quantity">
+          <button class="quantity-btn">-</button>
+          <span class="quantity-box">1</span>
+          <button class="quantity-btn">+</button>
+        </div>
+      </div>
+      <div class="cart-total">
+        <span><b>TOTAL</b></span>
+        <span>RM899.99</span>
+      </div>
+      <div class="cart-actions-payment-row">
+        <div class="cart-actions">
+          <button class="continue-shopping-btn">Continue Shopping</button>
+          <button class="checkout-btn">Check Out</button>
+        </div>
+        <div class="payment-methods">
+          <span>Payment Methods:</span>
+          <a href="#"><img src="images/cart/visa.png" alt="Visa" /></a>
+          <a href="#"><img src="images/cart/Mastercard.png" alt="Mastercard" /></a>
+          <a href="#"><img src="images/cart/PayPal.png" alt="PayPal" /></a>
+          <a href="#"><img src="images/cart/Alipay.png" alt="Alipay" /></a>
+          <a href="#"><img src="images/cart/applepay.png" alt="ApplePay" /></a>
+          <a href="#"><img src="images/cart/grab.png" alt="Grab" /></a>
+          <a href="#"><img src="images/cart/touchngo.png" alt="Touch 'n Go" /></a>
+          <a href="#"><img src="images/cart/shopeepay.png" alt="ShopeePay" /></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--footer-->
+    <!--footer-->
+    <footer class="footer-flex">
+
+      <div class="footer-flextop">
+        <!-- Top Left: About -->
+        <div class="footer-section About-Sonique">
+          <h4><a href="#" class="footer-heading">About Sonique</a></h4>
+          <!--use unordered list and anchor tag to link user to specific pages-->
+          <ul>
+            <li><a href="about_us.html">Our Brand</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="service.html">Service & Support</a></li>
+          </ul>
+          
+        </div>
+  
+       <!-- Top Center: Products -->
+      <div class="footer-section">
+        <h4><a href="productlisting-page.html" class="footer-heading">Our Product</a></h4>
+        <ul>
+          <li><a href="productlisting-page.html">All Headphones & Earphones </a></li>
+          <li><a href="productlisting-page.html?filter=headphone">Headphones</a></li>
+          <li><a href="productlisting-page.html?filter=earphone">Earphones</a></li>
+        </ul>
+      </div>  
+
+  
+        <!-- Top Right: Shipping Info -->
+        <div class="footer-section">
+          <h4><a href="faq.html" class="footer-heading">Shipping Information</a></h4>
+          <ul>
+            <li><a href="faq.html">Frequently Asked Question</a></li>
+            <li><a href="faq.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+  
+            <!-- Chat Box (aligned top right beside shipping) -->
+            <div class="footer-section chatbox">
+              <h4><a href="review.html" class="footer-heading">Chat With Us</a></h4>
+              <ul>
+                <li><a href="review.html">Leave us a Review! </a></li>
+              </ul>
+            </div>
+          </div>
+  
+      <div class="footer-flex-middle">
+        <!-- Newsletter (below chat box, also far right) -->
+        <div class="newsletter">
+          <label for="newsletter-email"><strong>Subscribe to our newsletter:</strong></label>
+          <div class="newsletter-input">
+            <input type="email" id="newsletter-email" placeholder="enter your email address">
+            <button id="subscribeBtn">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-flex-bottom">
+         <!-- Bottom Row -->
+        <div class="contact-us">
+          <p><small>📞 Contact us: +60 12-345 6789 </small></p>
+        </div>
+        <div class="footer-bottom-right">
+          <p><small>Connect with us: </small></p>
+          <a href="https://www.instagram.com/accounts/login/"><img class="footer-icon" src="images/footer/footer-ig.png" alt="ig" width="25"> </a>
+          <a href=" https://www.facebook.com/login"><img class="footer-icon"src="images/footer/footer-facebook.png" alt="facebook" width="25"> </a>
+          <a href="https://web.whatsapp.com"><img class="footer-icon" src="images/footer/footer-whatsapp.png" alt="whastapp" width="25"> </a>
+        </div>
+      </div>
+  
+      <div class="copyright-footer">
+        <small>&copy; copyright Sonique 2025</small>
+      </div>
+    </footer>
+</div> 
+
+<script src="javascript/newsletterValidation.js"></script>
+
+</body>
+</html> 

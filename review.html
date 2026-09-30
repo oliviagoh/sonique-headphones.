@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonique - Review Page</title>
+    <!--apply the CSS stylesheet -->
+    <link rel="stylesheet" href="review.css">
+</head>
+<body style="padding-bottom: 5%;">
+  <div class="page-container">
+
+     <!--nav bar-->
+     <nav class="nav">
+      <div class="nav-left">
+        <a href="homepage.html" class="Sonique">Sonique</a>
+      </div>
+      <div class="nav-center">
+        <a href="about_us.html" class="About-us">About Us</a>
+        <a href="productlisting-page.html" class="Shop">Shop</a>
+        <a href="productlisting-page.html" class="Product">Product</a>
+        <a href="service.html" class="Support">Support</a>
+      </div>
+      <div class="nav-right">
+        <a href="cart.html" class="add-to-card" ><img src="images/navbar/add-to-card.png" alt="Add to cart" width="28" height="28"></a>
+        <a href="signup.html"><button class="sign-in">Sign in</button></a>
+        <a href="#" class="userprofile"><img src="images/navbar/userprofile.png" alt="User Profile" width="28" height="28"></a>
+      </div>
+    </nav> 
+
+    <main>
+        <h2 class="section-title">Review & Feedback</h2>
+        <p>Tell Us What You Think. Free Stuff or Brownie Points? Your Choice.</p>
+
+        <div class="form-box">
+
+            <form id="productRatingForm" action="/submit-rating" method="post">
+                <!-- Product Dropdown -->
+                <div class="floating-input-group">
+                  <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a product</option>
+                    <option value="wh-ch720">Sonique WH-CH720 Wireless Noise Cancelling Headphones</option>
+                    <option value="wh-ch520">Sonique WH-CH520 Wireless Headphones</option>
+                    <option value="wh-ch720n">Sonique WH-CH720N Wireless Headphones</option>
+                    <option value="zx110nc">Sonique ZX110NC Noise Cancelling Headphones</option>
+                    <option value="wf-c510">Sonique WF-C510 Truly Wireless Headphones</option>
+                    <option value="wf-1000xm5">Sonique WF-1000XM5 Wireless Noise Cancelling Headphones</option>
+                    <option value="linkbuds-s">Sonique Link Buds S</option>
+                  </select>
+                </div>
+              
+                <!-- Rating (Stars) -->
+                <div class="floating-input-group">
+                  <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Select rating</option>
+                    <option value="1">★☆☆☆☆ (1)</option>
+                    <option value="2">★★☆☆☆ (2)</option>
+                    <option value="3">★★★☆☆ (3)</option>
+                    <option value="4">★★★★☆ (4)</option>
+                    <option value="5">★★★★★ (5)</option>
+                  </select>
+                </div>
+              
+                <!-- Optional Message -->
+                <div class="floating-input-group">
+                  <textarea id="reviewMessage" name="reviewMessage" rows="4" placeholder=""></textarea>
+                  <label for="reviewMessage">Your Review (Optional)</label>
+                </div>
+              
+                <!-- Submit Button -->
+                <input class="submit_btn" type="submit" value="Submit Rating" />
+              </form>
+
+        </div>
+        
+      </main>
+
+   
+      </div>
+
+      <script src="javascript/newsletterValidation.js"></script>   
+
+      <script src="javascript/reviewValidation.js"></script>   
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <h3>Welcome, User!</h3>
+    <p>Thank your for your review! Look out for changes in our next release!</p>
+    <button id="closeModalBtn" class="modal-btn">Continue</button>
+  </div>
+</div>
+
+</body>
+</html>     

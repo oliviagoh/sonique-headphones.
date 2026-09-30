@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonique - Contact Us</title>
+    <!--apply the CSS stylesheet -->
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body style="padding-bottom: 5%;">
+  <div class="page-container">
+
+     <!--nav bar-->
+     <nav class="nav">
+      <div class="nav-left">
+        <a href="homepage.html" class="Sonique">Sonique</a>
+      </div>
+      <div class="nav-center">
+        <a href="about_us.html" class="About-us">About Us</a>
+        <a href="productlisting-page.html" class="Shop">Shop</a>
+        <a href="productlisting-page.html" class="Product">Product</a>
+        <a href="service.html" class="Support">Support</a>
+      </div>
+      <div class="nav-right">
+        <a href="cart.html" class="add-to-card" ><img src="images/navbar/add-to-card.png" alt="Add to cart" width="28" height="28"></a>
+        <a href="signup.html"><button class="sign-in">Sign in</button></a>
+        <a href="#" class="userprofile"><img src="images/navbar/userprofile.png" alt="User Profile" width="28" height="28"></a>
+      </div>
+    </nav> 
+
+    <main>
+        <h2 class="section-title">Contact Us - How Can We Help You?</h2>
+        <p>Feel free to reach out — our customer support team will respond within 1–2 business days.</p>
+      
+        <div class="form-box">
+          <form id="signupForm" action="/signup" method="post">
+        
+            <!-- First and Last Name Side by Side -->
+              <div class="floating-input-group">
+                <input type="text" id="name" name="name" required />
+                <label for="name">Name <span style="color:red">*</span></label>
+              </div>
+        
+            <!-- Email -->
+            <div class="floating-input-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Email <span style="color:red">*</span></label>
+            </div>
+
+            <div class="floating-input-group">
+                <input type="tel" id="tel" name="tel" required />
+                <label for="tel">Phone Number (+60XX-XXX-XXXX) <span style="color:red">*</span></label>
+              </div>
+
+              <div class="floating-input-group">
+                <textarea id="message" name="message" rows="5" required placeholder=""></textarea>
+                <label for="message">Your Message <span style="color:red">*</span></label>
+              </div>              
+        
+        
+            <!-- Submit Button -->
+            <input class="submit_btn" type="submit" value="Send Message" />
+          </form>
+        </div>
+        
+      </main>
+      </div>
+<!--no footer here, we don't have footer in contact and review page-->
+
+      <script src="javascript/contactUs.js"></script>  
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <h3>Thank you for your report!  </h3>
+    <p>We'll get back to you as soon as our intern is done slacking off!</p>
+    <button id="closeModalBtn" class="modal-btn">Continue</button>
+  </div>
+</div>
+
+</body>
+</html>

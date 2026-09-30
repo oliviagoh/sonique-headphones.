@@ -1,0 +1,426 @@
+    /* Reset default margins and paddings */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #E5E4E2;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: stretch;
+    }
+
+    /* Set this to match the nav height, to prevent the content being hidden because of position fixed at nav bar */
+    header, main {
+        padding: 10px 20px;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers vertically */
+        align-items: center;     /* Centers horizontally */
+        min-height: calc(100vh - 70px);
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+    /* Navigation bar styles */
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+        background-color: #0e0433;
+        color: white;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    .nav-left, .nav-center, .nav-right {
+        min-width: 0;
+        flex-shrink: 1;
+    }
+    
+    .nav-left {
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .nav-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px; /* spacing between each link */
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        flex-wrap: wrap;
+    }
+    
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-right: 10px;
+    }
+    
+    .sign-in {
+        font-weight: 500;
+        font-size: 14px;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 50px;
+        width: 80px;
+        cursor: pointer;
+    }
+    
+    .add-to-card, .userprofile {
+        margin-top: 5px;
+    }
+
+    .userprofile {
+        margin-right: 2px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    .sign-in {
+        font-weight: 500;
+        font-size: 14px;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 50px;
+        width: 80px;
+        cursor: pointer;
+        background-color: #ffffff;
+        color: #0e0433;
+        transition: all 0.2s ease;
+        box-shadow: none;
+    }
+
+    /* Hover effect */
+    .sign-in:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Click/Active effect */
+    .sign-in:active {
+        background-color: #4666FF; /* Rich purple */
+        color: #fff;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+        transform: scale(0.96);
+    }
+
+    /*style login page */
+    .section-title{
+        color: #000;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+
+    .form-box {
+        border: 1px solid #000;
+        width: 100%;
+        max-width: 400px;
+        height: 330px;
+        flex-shrink: 0;
+        border-radius: 12px;          /* Optional: smoother corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+        text-align: center;
+        }
+
+    .box-title{
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .username_box{
+        margin-top: 20px;
+    }
+
+    .box-field{
+        background-color: transparent;
+        width: 150px;
+        height: 30px;
+        flex-shrink: 0;
+        border: 2px solid #031934;
+    }
+
+    .terms{
+        color: #03275D;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: auto;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .name-row {
+        display: flex;
+        gap: 20px; /* spacing between first and last name fields */
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit_btn{
+        width: 200px;
+        height: 50px;
+        flex-shrink: 0;
+        background: #0E0433;
+        color: #FFF8F8;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 30px;
+        margin-left: 0  ;
+    }
+
+    
+    
+
+    .password-field {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .password-field input {
+        width: 329px;
+        padding-right: 40px; /* space for the eye icon */
+    }
+    
+    #togglePasswordIcon {
+        position: absolute;
+        cursor: pointer;
+        color: #031934;
+    }
+    
+    .remember-forgot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 329px;
+        margin-left: 35px;
+    }
+
+    .remember-label {
+        display: flex;
+        align-items: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .forgot-link {
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 14px;
+        color: #03275D;
+    }
+
+    .forgot-link:hover {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    /* Modal Overlay */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content Box */
+  .modal-content {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .modal-content h3 {
+    margin: 0 0 12px 0;
+    color: #0E0433;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+  }
+  
+  .modal-content p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-btn {
+    background-color: #0E0433;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .modal-btn:hover {
+    background-color: #2a1b5d;
+  }
+
+  .float-label-input {
+    position: relative;
+    width: 329px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  
+  .float-label-input input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid #031934;
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .float-label-input label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #999;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    pointer-events: none;
+    background-color: #E5E4E2; /* matches your page background */
+    padding: 0 4px;
+    transition: 0.2s ease all;
+  }
+  
+  .float-label-input input:focus + label,
+  .float-label-input input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    color: #031934;
+  }
+  
+  .float-label-input i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #031934;
+    cursor: pointer;
+  }
+  
+  /* Responsive media queries */
+  @media (max-width: 1024px) {
+    .nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-center {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        gap: 30px;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 0;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-center {
+        gap: 30px;
+    }
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-link a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+    color: black; /* Change to any color you like */
+  }
